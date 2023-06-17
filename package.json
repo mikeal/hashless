@@ -1,0 +1,19 @@
+{
+  "name": "hashless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache2 & MIT",
+  "dependencies": {
+    "blake3-multihash": "^0.0.4",
+    "uint8arrays": "^4.0.4"
+  }
+}
