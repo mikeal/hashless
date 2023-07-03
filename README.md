@@ -1,9 +1,21 @@
 # hashless
 
-Hashless is an alternative encoding scheme for IPFS protocols.
+Hashless is a proof encoding scheme. It is an alternative to many IPFS protocols yet is built upon many IPFS protocols. As such it tends to upend most conceptual models for how IPFS/IPLD "work."
+
+Hashless does not define an encoding scheme for source data and does not re-encode source data into merkle structures. Instead, a proof description is encoded which, when applied to source data, produces a resulting merkle structure (proof).
+
+By not touching source data, hashless is truly flexible, working with any input data in an format, in any storage system, available over any transport.
+
+Since proofs are not computed until the proof is addressed (CID) hashless proofs are not bound to a specific hash function and hashes are not encoded and exchanged, they are computed as proof.
+
+# Data Structures
+
+It would be tempting to model all data as JSON, or JSON-like
+
+## BVREAM (Bye Vectors Rule Everything Around Me)
 
 Rather than the view of CID's imposed by IPLD that "all data is a graph"
-the view of CID's imposed by `hashless` is "all data as byte vectors."
+the view of merkle structures hashless imposea is "all data as byte vectors."
 
 This encoding scheme can encode existing IPFS/IPLD data with "blocks as byte vectors"
 but much more sophisticated data structures can be built in the form
