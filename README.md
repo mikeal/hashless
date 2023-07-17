@@ -2,13 +2,13 @@
 
 Hashless is a data layer of pure cryptography of The Web.
 
-* It is "of The Web" as it does not create or define any new
+* It is characterized as being "of The Web" as it does not create or define any new
   data persistence or transport protocols, any data over any
 	transport is acceptable input and can be addressed "in place"
 	where it already resides (probably a file available over HTTP).
 * It is called "pure cryptography" because all data is encoded
   as proof instructions and resulting proofs.
-* It is call "hashless" because the instructions and proofs
+* It is called "hashless" because the instructions and proofs
   are hash function agnostic and hashes are never encoded
 	***into*** the data, instructions and proofs are encoded
 	apart (cryptographically speaking).
