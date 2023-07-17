@@ -1,7 +1,8 @@
 {
   "name": "hashless",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cryptographic Data Layer for The Web",
+	"type":"module",
   "main": "index.js",
   "directories": {
     "lib": "lib"
